@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/39c0e0ec88.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+<!-- Header Section -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="LOGO img" class="logo">
+
+                <ul class="left-links">
+                    <a href="https://www.linkedin.com/in/arkob-soukaina" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Arkob-Soukaina" target="_blank"><i class="fab fa-github"></i></a>
+                </ul>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()" ></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>HEY, I'M <span>ARKOB SOUKAINA</span></h1>
+                <p class="subtext">A<span> Frontend Web Developer.</span> I specialize in crafting engaging and user-friendly interfaces for websites and web applications, Let's build something great together!</p>
+            </div> 
+        </div>
+
+
+<!-- About Section -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="C:\Users\arkob\Documents\Portfolio\imgs/woman.png" alt="Profile Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Get to know me!</h1>
+                <p>I'm a <span>Frontend Web Developer</span>. I make websites and apps look awesome! 
+                   <br> Check out some of my cool projects in My Work section. 
+                   I'm on the lookout for new job opportunities where I can learn and grow. 
+                   If you've got a cool project or job that fits my skills, give me a shout. 
+                   Let's build something great together!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front end Development</span> : HTML, CSS, JavaScript, Responsive Web Design, Version Control, Git, Developer Tools.</li>
+                        <li><span>WordPress Development</span> : WordPress Basics, PHP, MySQL, Security, Divi Theme, SEO & Performance Optimization, Theme Development.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Current</span><br>Building My Portfolio Website</li>
+                        <li><span>2022 - 2023</span><br>Internship at Global Etik</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - 2023</span><br>Software Development Diploma</li>
+                        <li><span>2020 - 2021</span><br>University Abdelmalek Essaadi</li>
+                        <li><span>2019 - 2020</span><br>Baccalaureate in Physics & Chemistry</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-------------Portfolio-------------> 
+
+<div id="portfolio">
+
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="C:\Users\arkob\Documents\Portfolio\imgs/woman.png">
+                <div class="layer">
+                       <h3>Website Name</h3>
+                       <p>Description</p>
+                       <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="C:\Users\arkob\Documents\Portfolio\imgs/woman.png">
+                 <div class="layer">
+                    <h3>Website Name</h3>
+                       <p>Description</p>
+                       <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="C:\Users\arkob\Documents\Portfolio\imgs/woman.png">
+                 <div class="layer">
+                    <h3>Website Name</h3>
+                       <p>Description</p>
+                       <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more </a>
+    </div>
+</div>
+
+<!----------Contact---------->
+
+<div id="contact">
+
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>arkob.soukaina@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+212 693612180</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/arkob-soukaina" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Arkob-Soukaina" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" target="_blank" class="btn btn2">View CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+    <p>Copyright &copy; Soukaina. Made with <i class="fa-solid fa-heart"></i> By Soukaina</p>
+    </div>
+</div>
+
+<!----------JAVASCRIPT---------->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwJoB6IMx2OaDUokApPcaB6oOBeJUd6B1LyH3BAPkz_uv7oVds8ddjngZ0nHD2ljGEj8g/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
