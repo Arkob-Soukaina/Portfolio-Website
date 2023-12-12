@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Blue Abstract.png" type="image/png">
     <script src="https://kit.fontawesome.com/39c0e0ec88.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,7 +21,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="LOGO img" class="logo">
+                <img src="Logoo.png" class="logo">
 
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/arkob-soukaina" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -55,11 +56,11 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">Get to know me!</h1>
-                <p>I'm a <span>Frontend Web Developer</span>. I make websites and apps look awesome! 
-                   <br> Check out some of my cool projects in My Work section. 
-                   I'm on the lookout for new job opportunities where I can learn and grow. 
-                   If you've got a cool project or job that fits my skills, give me a shout. 
-                   Let's build something great together!</p>
+                <p>I'm a <span>Front-end Web Developer</span> with a passion for creating beautiful, responsive and functional websites.
+                Check out some of my cool projects in My Work section. 
+                I'm on the lookout for new job opportunities where I can learn and grow. 
+                If you've got a cool project or job that fits my skills, give me a shout. 
+                Let's build something great together!</p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -68,13 +69,13 @@
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Front end Development</span> : HTML, CSS, JavaScript, Responsive Web Design, Version Control, Git, Developer Tools.</li>
-                        <li><span>WordPress Development</span> : WordPress Basics, PHP, MySQL, Security, Divi Theme, SEO & Performance Optimization, Theme Development.</li>
+                        <li><span>WordPress Development</span> : WordPress Basics, PHP, MySQL, Security, Divi Theme, SEO, Performance Optimization, Theme Development.</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
                         <li><span>Current</span><br>Building My Portfolio Website</li>
-                        <li><span>2022 - 2023</span><br>Internship at Global Etik</li>
+                        <li><span>2023</span><br>Internship opportunity at Global Etik focusing on website development utilizing WordPress Divi, along with proficiency in SEO and performance optimization.</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -141,7 +142,7 @@
                 <a href="C:\Users\arkob\Documents\Portfolio\CV\CV ARKOB Soukaina.pdf" target="_blank" class="btn btn2">View CV</a>
             </div>
             <div class="contact-right">
-                <form name="">
+                <form name="contactForm">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -192,16 +193,17 @@
 
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwJoB6IMx2OaDUokApPcaB6oOBeJUd6B1LyH3BAPkz_uv7oVds8ddjngZ0nHD2ljGEj8g/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwJoB6IMx2OaDUokApPcaB6oOBeJUd6B1LyH3BAPkz_uv7oVds8ddjngZ0nHD2ljGEj8g/exec';
+    const form = document.forms['contactForm']; 
+
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+        .catch(error => console.error('Error!', error.message));
+    });
+</script>
+
 
 
 <script>
@@ -222,6 +224,7 @@
             portfolioSection.scrollIntoView({ behavior: 'smooth' });
         });
     });
+
 </script>
 
 </body>

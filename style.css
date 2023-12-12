@@ -1,9 +1,12 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -19,7 +22,6 @@ body {
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-image: url('imgs/');
 
 }
 
@@ -170,7 +172,7 @@ nav ul li a:hover::after {
 
 .header-text .projects {
     display: inline-block;
-    padding: 20px 70px;
+    padding: 20px 60px;
     margin-top: 30px; 
     background-color:#DA70D6;; 
     color: #fff; 
@@ -181,15 +183,15 @@ nav ul li a:hover::after {
 }
 
 .header-text .projects:hover {
-    background-color: #290b34; 
+    background-color: #32043a; 
 }
 
 
 /*--------------About-------------*/
 #about {
-    padding-top: 50px;
-    padding-bottom: 70px;
-    color: #ababab;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: #bebebe;
 }
 
 .row {
@@ -274,7 +276,9 @@ nav ul li a:hover::after {
 /*-------------Portfolio-------------*/
 
 #portfolio {
-    padding-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 26px;
+
 }
 
 .work-list {
@@ -389,7 +393,7 @@ nav ul li a:hover::after {
     margin-right: 15px;
     text-decoration: none;
     font-size: 30px;
-    color: #ababab;
+    color: #bebebe;
     display: inline-block;
     transition: transform 0.5s;
 }
@@ -413,7 +417,7 @@ form textarea {
     width: 100%;
     border: 0;
     outline: home;
-    background: #262626;
+    background: #32043a;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
@@ -432,7 +436,7 @@ form .btn2 {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #32043a;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -449,6 +453,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 700px) {
 
+    
     nav ul {
         text-align: center;
         margin-top: 20px;
@@ -484,15 +489,28 @@ nav .fa-solid {
         margin: 10px 0;
     }
 
+
     .header-text {
-        margin-top: 10%;
         font-size: 18px;
+    
     }
 
     .header-text h1 {
-        font-size: 30px;
-        margin-top: 20px;
+        font-size: 25px;
     }
+
+    .header-text p.subtext {
+        font-size: 14px; 
+        padding-left: 30px;
+        padding-right: 30px;
+       
+    }
+
+    
+.header-text .projects {
+        font-size: 14px;
+        padding: 20px 50px;
+      }
 
 
 /* About Section Styles */
@@ -504,9 +522,6 @@ nav .fa-solid {
     margin-bottom: 10px; 
 }
 
-.about-col-1 {
-    margin-bottom: 10px;
-}
 
 .about-col-2 {
     font-size: 14px;
@@ -530,14 +545,14 @@ nav .fa-solid {
     }
 
     .tab-links::after {
-        bottom: -12px; 
+        bottom: -9px; 
     }
 
 
 /* Work Section Styles */
     .work-list {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(0px, 100%));
+        grid-gap: 15px;
         margin-top: 10px;
     }
 
@@ -547,6 +562,7 @@ nav .fa-solid {
         height: auto;
         border-radius: 10px;
     }
+
 
 /* Contact Section Styles */
     .layer {
@@ -600,7 +616,7 @@ body::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(45deg, #784274, #1d0217);
+    background: linear-gradient(45deg, #893d87, #280341);
     opacity: 1; 
     animation: animateBackground 20s linear infinite;
 }
