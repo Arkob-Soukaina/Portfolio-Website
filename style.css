@@ -30,13 +30,11 @@ body {
     padding: 10PX 10%;
 }
 
-
-body {
-    background: #080808;
-    color: #ffffff;
-    
+.logo {
+    cursor: pointer;
 }
-  
+
+
   .social-icons {
     position: fixed;
     height: 100vh;
@@ -188,6 +186,19 @@ nav ul li a:hover::after {
 
 
 /*--------------About-------------*/
+
+.about-col-2 a {
+    color: #DA70D6;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about-col-2 a:hover {
+    text-decoration: underline;
+}
+
+
 #about {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -302,6 +313,7 @@ nav ul li a:hover::after {
 }
 
 /*-------------My Work-------------*/
+
 
 .layer { 
 
@@ -445,38 +457,40 @@ form .btn2 {
     color: #DA70D6; 
 }
 
-/* ------------ Responsive Styles -----------*/
-
 nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width: 700px) {
+/* ------------ Responsive Styles -----------*/
 
-    
+
+@media only screen and (max-width: 650px) {
+
     nav ul {
         text-align: center;
         margin-top: 20px;
         background: #DA70D6; 
         position: fixed;
-        top: 0;
+        top: -5px;
         right: -200px;
-        width: 100px;
-        height: 100vh;
+        width: 120px;
+        height: 50vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
+        border-radius: 10px;
     }
 
     nav .fa-solid {
         display: block;
         font-size: 25px;
+
     }
 
     nav ul .fa-solid {
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 30px;
+        left: 50px;
         cursor: pointer;
     }
 
@@ -486,21 +500,16 @@ nav .fa-solid {
 
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 13px 0;
     }
 
-
-    .header-text {
-        font-size: 18px;
-    
-    }
 
     .header-text h1 {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .header-text p.subtext {
-        font-size: 14px; 
+        font-size: 15px; 
         padding-left: 30px;
         padding-right: 30px;
        
@@ -553,7 +562,7 @@ nav .fa-solid {
     .work-list {
         grid-template-columns: repeat(auto-fit, minmax(0px, 100%));
         grid-gap: 15px;
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
     .work img {
@@ -565,6 +574,11 @@ nav .fa-solid {
 
 
 /* Contact Section Styles */
+
+#contact .container {
+    flex-direction: column;
+}
+
     .layer {
         padding: 0 20px;
     }
@@ -572,11 +586,9 @@ nav .fa-solid {
     .contact-left,
     .contact-right {
         flex-basis: 100%;
+        width: 100%;
     }
 
-    .social-icons {
-        margin-top: 20px;
-    }
 
      /* Form Styles */
     form input,

@@ -6,14 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>ARKOB SOUKAINA</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Blue Abstract.png" type="image/png">
+    <link rel="icon" href="icon.png" type="image/png">
     <script src="https://kit.fontawesome.com/39c0e0ec88.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
 
 
 <!-- Header Section -->
@@ -21,7 +20,8 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="Logoo.png" class="logo">
+
+                <img src="soukainalogo.png" class="logo" alt="Logo" id="refreshLogo">
 
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/arkob-soukaina" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -41,7 +41,7 @@
 
             <div class="header-text">
                 <h1>HEY, I'M <span>ARKOB SOUKAINA</span></h1>
-                <p class="subtext">A<span> Frontend Web Developer.</span> I specialize in crafting engaging and user-friendly interfaces for websites and web applications, Let's build something great together!</p>
+                <p class="subtext">A<span> Front-End Web Developer.</span> I specialize in crafting engaging and user-friendly interfaces for websites and web applications, Let's build something great together!</p>
                 <a href="#projects" class="projects">PROJECTS</a>
             </div> 
         </div>
@@ -56,8 +56,8 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">Get to know me!</h1>
-                <p>I'm a <span>Front-end Web Developer</span> with a passion for creating beautiful, responsive and functional websites.
-                Check out some of my cool projects in My Work section. 
+                <p>I'm a <span>Front-End Web Developer</span> with a passion for creating beautiful, responsive and functional websites.
+                Check out some of my cool projects in <a href="#portfolio">My Work</a> section. 
                 I'm on the lookout for new job opportunities where I can learn and grow. 
                 If you've got a cool project or job that fits my skills, give me a shout. 
                 Let's build something great together!</p>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Front end Development</span> : HTML, CSS, JavaScript, Responsive Web Design, Version Control, Git, Developer Tools.</li>
+                        <li><span>Front End Development</span> : HTML, CSS, JavaScript, Responsive Web Design, Version Control/Git, Developer Tools.</li>
                         <li><span>WordPress Development</span> : WordPress Basics, PHP, MySQL, Security, Divi Theme, SEO, Performance Optimization, Theme Development.</li>
                     </ul>
                 </div>
@@ -136,11 +136,19 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
+
                 <p><i class="fa-solid fa-paper-plane"></i>arkob.soukaina@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>+212 693612180</p>
+                <p><i class="fa-solid fa-square-phone"></i>+212 6 93 61 21 80</p>
+                
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/arkob-soukaina" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Arkob-Soukaina" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/ARKOB_Soukaina" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
                 
                 <a href="C:\Users\arkob\Documents\Portfolio\CV\CV ARKOB Soukaina.pdf" target="_blank" class="btn btn2">View CV</a>
             </div>
+            
             <div class="contact-right">
                 <form name="contactForm">
                     <input type="text" name="Name" placeholder="Your Name" required>
@@ -159,6 +167,32 @@
 
 
 <!----------JAVASCRIPT---------->
+
+
+
+<script>
+    // Add an event listener to the logo element
+    document.getElementById('refreshLogo').addEventListener('click', function() {
+        // Reload the page when the logo is clicked
+        location.reload();
+    });
+</script>
+
+
+<script>
+    // Smooth scroll effect
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
@@ -226,6 +260,7 @@
     });
 
 </script>
+
 
 </body>
 </html>
