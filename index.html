@@ -5,9 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ARKOB SOUKAINA</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <link rel="icon" href="icon.png" type="image/png">
     <script src="https://kit.fontawesome.com/39c0e0ec88.js" crossorigin="anonymous"></script>
 </head>
@@ -42,7 +43,7 @@
             <div class="header-text">
                 <h1>HEY, I'M <span>ARKOB SOUKAINA</span></h1>
                 <p class="subtext">A<span> Front-End Web Developer.</span> I specialize in crafting engaging and user-friendly interfaces for websites and web applications, Let's build something great together!</p>
-                <a href="#projects" class="projects">PROJECTS</a>
+                <a href="#portfolio" class="projects">PROJECTS</a>
             </div> 
         </div>
 
@@ -99,30 +100,61 @@
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
+
             <div class="work">
-                <img src="woman.png">
+                <iframe src="https://fleurs-rosaline.be" width="100%" height="300" frameborder="0" style="overflow: auto;"></iframe>
                 <div class="layer">
                        <h3>Website Name</h3>
                        <p>Description</p>
-                       <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                       <a href="https://fleurs-rosaline.be" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
+            
             <div class="work">
-                <img src="woman.png">
+                <iframe src="https://petitchaperonrouge.be" width="100%" height="300" frameborder="0" style="overflow: auto;"></iframe>
                  <div class="layer">
                     <h3>Website Name</h3>
                        <p>Description</p>
-                       <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                       <a href="https://petitchaperonrouge.be" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
+
             <div class="work">
-                <img src="woman.png">
+                <iframe src="https://lefournildemichel.be" width="100%" height="300" frameborder="0" style="overflow: auto;"></iframe>
                  <div class="layer">
                     <h3>Website Name</h3>
                        <p>Description</p>
-                       <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                       <a href="https://lefournildemichel.be" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
+
+            <div class="work">
+                <iframe src="https://friterielulu.be" width="100%" height="300" frameborder="0" style="overflow: auto;"></iframe>
+                <div class="layer">
+                       <h3>Website Name</h3>
+                       <p>Description</p>
+                       <a href="https://friterielulu.be" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <iframe src="https://etfleuretmoi.be" width="100%" height="300" frameborder="0" style="overflow: auto;"></iframe>
+                 <div class="layer">
+                    <h3>Website Name</h3>
+                       <p>Description</p>
+                       <a href="https://etfleuretmoi.be" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <iframe src="https://b-frite.be" width="100%" height="300" frameborder="0" style="overflow: auto;"></iframe>
+                 <div class="layer">
+                    <h3>Website Name</h3>
+                       <p>Description</p>
+                       <a href="https://b-frite.be" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
         </div>
         <a href="#" class="btn">See more </a>
     </div>
@@ -139,13 +171,13 @@
 
                 <p><i class="fa-solid fa-paper-plane"></i>arkob.soukaina@gmail.com</p>
                 <p><i class="fa-solid fa-square-phone"></i>+212 6 93 61 21 80</p>
-                
-                <div class="social-icons">
+                                
+                <div class="contact-icons">
                     <a href="https://www.linkedin.com/in/arkob-soukaina" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/Arkob-Soukaina" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://twitter.com/ARKOB_Soukaina" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
-                
+
                 <a href="ARKOB SOUKAINA RESUME.pdf" target="_blank" class="btn btn2">View CV</a>
             </div>
             
@@ -163,102 +195,6 @@
     <p>Copyright &copy; Soukaina. Made with <i class="fa-solid fa-heart"></i> By Soukaina</p>
     </div>
 </div>
-
-
-
-<!----------JAVASCRIPT---------->
-
-
-
-<script>
-    // Add an event listener to the logo element
-    document.getElementById('refreshLogo').addEventListener('click', function() {
-        // Reload the page when the logo is clicked
-        location.reload();
-    });
-</script>
-
-
-<script>
-    // Smooth scroll effect
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-</script>
-
-
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname) {
-        for ( let  tablink of tablinks) {
-            tablink.classList.remove("active-link");
-        }
-
-        for ( let tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-
-<script>
-
-    var sidemenu = document.getElementById("sidemenu");
-    
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-</script>
-
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwJoB6IMx2OaDUokApPcaB6oOBeJUd6B1LyH3BAPkz_uv7oVds8ddjngZ0nHD2ljGEj8g/exec';
-    const form = document.forms['contactForm']; 
-
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message));
-    });
-</script>
-
-
-
-<script>
-    // JavaScript to handle smooth scrolling
-    document.addEventListener('DOMContentLoaded', function () {
-        // Select the "Projects" button
-        var projectsButton = document.querySelector('.projects');
-
-        // Select the target section ("portfolio")
-        var portfolioSection = document.getElementById('portfolio');
-
-        // Add click event listener to the button
-        projectsButton.addEventListener('click', function (event) {
-            // Prevent the default behavior of the link
-            event.preventDefault();
-
-            // Scroll to the portfolio section
-            portfolioSection.scrollIntoView({ behavior: 'smooth' });
-        });
-    });
-
-</script>
 
 
 </body>
