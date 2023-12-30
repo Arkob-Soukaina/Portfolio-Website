@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +19,25 @@ body {
     background: #080808;
     color: #ffffff;
 }
+
+
+.boxTools small {
+    font-family: "Inter", sans-serif;
+    background: var(--lightGray);
+    padding: 
+    0.3rem 
+    0.4rem
+    ;
+    border-radius: 
+    1rem
+    ;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--offWhite);
+    }
+
+    
 
 #header {
     width: 100%;
@@ -35,6 +56,10 @@ body {
 }
 
 
+.fa-bars, .fa-xmark {
+    cursor: pointer;
+    font-size: 24px;
+}
 
 .social-icons {
     position: fixed;
@@ -153,7 +178,6 @@ nav ul li a:hover::after {
     font-size: 50px;
    
 }
-
 
 .header-text p.subtext {
     font-size: 16px; 
@@ -405,8 +429,6 @@ nav ul li a:hover::after {
     transform: translateY(-5px);
 }
 
-
-
 .contact-left {
     flex-basis: 35%;
 }
@@ -476,6 +498,27 @@ nav .fa-solid {
 
 @media only screen and (max-width: 650px) {
 
+    
+#sidemenu {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 50px;
+    text-align: right;
+    transition: right 0.3s ease;
+}
+
+#sidemenu a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
 
     .social-icons {
         display: none;
@@ -530,28 +573,28 @@ nav .fa-solid {
        
     }
 
-    
-.header-text .projects {
+        
+    .header-text .projects {
+            font-size: 14px;
+            padding: 20px 50px;
+        }
+
+
+    /* About Section Styles */
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 10px; 
+    }
+
+
+    .about-col-2 {
         font-size: 14px;
-        padding: 20px 50px;
-      }
+    }
 
-
-/* About Section Styles */
-
-.about-col-1,
-.about-col-2 {
-    flex-basis: 100%;
-    text-align: center;
-    margin-bottom: 10px; 
-}
-
-
-.about-col-2 {
-    font-size: 14px;
-}
-
-/* Tab Styles */
+    /* Tab Styles */
     .tab-links,
     .tab-contents {
         text-align: center;
@@ -631,8 +674,6 @@ nav .fa-solid {
         padding-top: 50px;
     }
 }
-
-
 
 /* Background Animation Styles */
 body::before {
