@@ -21,23 +21,6 @@ body {
 }
 
 
-.boxTools small {
-    font-family: "Inter", sans-serif;
-    background: var(--lightGray);
-    padding: 
-    0.3rem 
-    0.4rem
-    ;
-    border-radius: 
-    1rem
-    ;
-    font-size: 0.6rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: var(--offWhite);
-    }
-
-    
 
 #header {
     width: 100%;
@@ -312,6 +295,7 @@ nav ul li a:hover::after {
     display: block;
 }
 
+
 /*-------------Portfolio-------------*/
 
 #portfolio {
@@ -322,7 +306,7 @@ nav ul li a:hover::after {
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }

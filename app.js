@@ -1,7 +1,9 @@
-// Reload the page when the logo is clicked
-document.getElementById('refreshLogo').addEventListener('click', function() {
-    location.reload();
-});
+ document.addEventListener('DOMContentLoaded', function() {
+            // Reload the page when the logo is clicked
+            document.getElementById('refreshLogo').addEventListener('click', function() {
+                location.reload();
+            });
+        });
 
 // Smooth scroll effect
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
