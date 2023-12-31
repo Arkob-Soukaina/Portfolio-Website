@@ -11,6 +11,7 @@
     <script src="app.js"></script>
     <link rel="icon" href="icon.png" type="image/png">
     <script src="https://kit.fontawesome.com/39c0e0ec88.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -55,35 +56,39 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="woman.png" alt="Profile Image">
+                <img src="3dwoman.png" alt="Profile Image">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">Get to know me!</h1>
-                <p>As a passionate<span> Web Developer</span>I specialize in creating responsive and functional websites that leave a lasting impression.
-                    Feel free to explore my projects showcased in the <a href="#portfolio">My Work</a> section.
+                <h1 class="sub-title">About me </h1>
+                <p>As a passionate<span> Web Developer</span>I specialize in creating responsive and functional websites.
+                    Feel free to explore my projects showcased in <a href="#portfolio">My Work</a> section.
                     I am actively seeking exciting job opportunities where I can contribute my skills and expertise.
                     Let's build something great together!</p>
+
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
+
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Front End Development</span> : HTML, CSS, JavaScript, Responsive Web Design, Version Control/Git, Developer Tools.</li>
-                        <li><span>WordPress Development</span> : WordPress Basics, PHP, MySQL, Security, Divi Theme, SEO, Performance Optimization, Theme Development.</li>
+                        <li><span>Front End Development</span> : HTML, CSS, JavaScript, Responsive Web Design.</li>
+                        <li><span>WordPress Development</span> : WordPress Basics, PHP, Divi Theme, SEO, Performance optimization.</li>
+                        <li><span>Other Skills</span> : MYSQL, SQL, Version Control/Git, Developer Tools.</li>
                     </ul>
                 </div>
+
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Current</span><br>Building My Portfolio Website</li>
-                        <li><span>2023</span><br>Internship opportunity at Global Etik focusing on website development utilizing WordPress Divi, along with proficiency in SEO and performance optimization.</li>
+                        <li><span>Current</span><br>Building My Portfolio Website using HTML, CSS, JavaScript.</li>
+                        <li><span>2023</span><br>Internship at Global Etik focusing on website development utilizing WordPress Divi, along with SEO and performance optimization.</li>
                     </ul>
                 </div>
+
                 <div class="tab-contents" id="education">
                     <ul>
                         <li><span>2021 - 2023</span><br>Software Development Diploma</li>
-                        <li><span>2020 - 2021</span><br>University Abdelmalek Essaadi</li>
                         <li><span>2019 - 2020</span><br>Baccalaureate in Physics & Chemistry</li>
                     </ul>
                 </div>
@@ -192,6 +197,8 @@
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <div id="message"></div>
+
             </div>
         </div>
     </div>

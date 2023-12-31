@@ -30,6 +30,19 @@ body {
 }
 
 
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+
+
+
 .container {
     padding: 10PX 10%;
 }
@@ -42,7 +55,11 @@ body {
 .fa-bars, .fa-xmark {
     cursor: pointer;
     font-size: 24px;
+
 }
+
+
+
 
 .social-icons {
     position: fixed;
@@ -479,30 +496,43 @@ nav .fa-solid {
 
 /* ------------ Responsive Styles -----------*/
 
+@media only screen and (min-width: 651px) and (max-width: 1124px) {
+    /* Tablet styles */
+
+    .social-icons {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 650px) {
 
+    #sidemenu {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        background-color: #DA70D6;
+        padding-top: 50px;
+        text-align: right;
+        transition: right 0.3s ease;
+    }
+
+    #sidemenu a {
+        display: block;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center; 
+    }
+
+    .fa-xmark {
+        display: inline-block;
+        text-align: center;
+        width: 50%; 
+    }
     
-#sidemenu {
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100%;
-    background-color: #333;
-    padding-top: 50px;
-    text-align: right;
-    transition: right 0.3s ease;
-}
-
-#sidemenu a {
-    display: block;
-    padding: 15px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
 
     .social-icons {
         display: none;
@@ -575,8 +605,10 @@ nav .fa-solid {
 
 
     .about-col-2 {
-        font-size: 14px;
+        font-size: 15px;
     }
+
+
 
     /* Tab Styles */
     .tab-links,
@@ -603,7 +635,7 @@ nav .fa-solid {
 /* Work Section Styles */
     .work-list {
         grid-template-columns: repeat(auto-fit, minmax(0px, 100%));
-        grid-gap: 15px;
+        grid-gap: 30px;
         margin-top: 30px;
     }
 
