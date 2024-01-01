@@ -1,3 +1,25 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the "See more" button and additional projects
+    const seeMoreBtn = document.getElementById("see-more-btn");
+    const additionalProjects = document.querySelectorAll(".additional-work");
+
+    // Function to show the additional projects
+    function showAdditionalProjects() {
+        additionalProjects.forEach(function (project) {
+            project.style.display = "block";
+        });
+
+        // Disable the "See more" button after showing projects
+        seeMoreBtn.removeEventListener("click", showAdditionalProjects);
+    }
+
+    // Add click event listener to the "See more" button
+    seeMoreBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        showAdditionalProjects();
+    });
+});
+
 
 
 
