@@ -19,6 +19,33 @@ document.querySelector(this.getAttribute('href')).scrollIntoView({
 });
 });
 
+// Show/hide the scroll-to-top button based on the scroll position
+window.onscroll = function () {
+    showScrollToTopButton();
+  };
+  
+  function showScrollToTopButton() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    var scrollHeight = document.documentElement.scrollHeight;
+    var windowHeight = window.innerHeight;
+    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  
+    if (scrollPosition > scrollHeight / 2) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  }
+  
+  // Scroll to the top when the button is clicked
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }
+  
+
+  
+
 
 // Define opentab function in the global scope
 function opentab(tabname) {
