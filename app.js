@@ -41,6 +41,9 @@ document.querySelector(this.getAttribute('href')).scrollIntoView({
 });
 });
 
+
+
+
 // Show/hide the scroll-to-top button based on the scroll position
 window.onscroll = function () {
     showScrollToTopButton();
@@ -48,11 +51,7 @@ window.onscroll = function () {
   
   function showScrollToTopButton() {
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-    var scrollHeight = document.documentElement.scrollHeight;
-    var windowHeight = window.innerHeight;
-    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-  
-    if (scrollPosition > scrollHeight / 2) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       scrollToTopBtn.style.display = "block";
     } else {
       scrollToTopBtn.style.display = "none";
@@ -64,6 +63,8 @@ window.onscroll = function () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   }
+  
+
   
 
   
