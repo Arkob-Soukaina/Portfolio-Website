@@ -267,6 +267,12 @@ nav ul li a:hover::after {
     max-height: 100%;
 }
 
+
+.about-col-2 p {
+    font-size: 14.6px; /* Adjust the font size as needed */
+}
+
+
 .about-col-2 {
     flex-basis: 60%;
 }
