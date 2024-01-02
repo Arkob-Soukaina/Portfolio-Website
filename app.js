@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
     // Get the "See more" button and additional projects
     const seeMoreBtn = document.getElementById("see-more-btn");
@@ -43,7 +45,6 @@ document.querySelector(this.getAttribute('href')).scrollIntoView({
 
 
 
-
 // Show/hide the scroll-to-top button based on the scroll position
 window.onscroll = function () {
     showScrollToTopButton();
@@ -63,10 +64,6 @@ window.onscroll = function () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   }
-  
-
-  
-
   
 
 
@@ -103,8 +100,6 @@ function opentab(tabname) {
 }
 
 
-
-
 var sidemenu; // Define sidemenu in a wider scope
 
 window.onload = function () {
@@ -130,6 +125,7 @@ window.onload = function () {
     }
 };
 
+
 // The openmenu and closemenu functions are defined globally, so they can be used in the HTML onclick attribute
 function openmenu() {
     console.log("Open menu called");
@@ -140,10 +136,6 @@ function closemenu() {
     console.log("Close menu called");
     sidemenu.style.right = "-200px";
 }
-
-
-
-
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -168,8 +160,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
   });
-
-
 
 
 // JavaScript to handle smooth scrolling
