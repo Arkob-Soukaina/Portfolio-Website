@@ -2,8 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -20,16 +18,32 @@ body {
     color: #ffffff;
 }
 
-
-
 #header {
     width: 100%;
     height: 100vh;
     background-size: cover;
-
+}
+  
+.tab-contents {
+    display: none;
 }
 
+.tab-contents.active-tab {
+    display: block;
+}
 
+.container {
+    padding: 10PX 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.fa-bars, .fa-xmark {
+    cursor: pointer;
+    font-size: 24px;
+}
 
 #scrollToTopBtn {
     display: none;
@@ -43,38 +57,6 @@ body {
     padding: 10px 15px;
     cursor: pointer;
   }
-  
-  
-
-.tab-contents {
-    display: none;
-}
-
-.tab-contents.active-tab {
-    display: block;
-}
-
-
-
-
-
-.container {
-    padding: 10PX 10%;
-}
-
-.logo {
-    cursor: pointer;
-}
-
-
-.fa-bars, .fa-xmark {
-    cursor: pointer;
-    font-size: 24px;
-
-}
-
-
-
 
 .social-icons {
     position: fixed;
@@ -107,8 +89,6 @@ body {
     color: #DA70D6;
     transform: translateY(-5px);
 }
-
-
 
 nav {
     display: flex;
@@ -149,7 +129,6 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-
 .left-links {
     list-style: none;
     display: flex;
@@ -170,7 +149,6 @@ nav ul li a:hover::after {
     color: #ffffff;
     font-weight: bold;
 }
-
 
 /*--------------Header-------------*/
 
@@ -207,7 +185,6 @@ nav ul li a:hover::after {
     font-weight: bold;
     font-size: 17px; 
 }
-
 
 /* Style for the projects link */
 
@@ -266,9 +243,6 @@ nav ul li a:hover::after {
     border-radius: 15px;
     max-height: 100%;
 }
-
-
-
 
 .about-col-2 {
     flex-basis: 60%;
@@ -332,7 +306,6 @@ nav ul li a:hover::after {
     display: block;
 }
 
-
 /*-------------Portfolio-------------*/
 
 #portfolio {
@@ -367,7 +340,6 @@ nav ul li a:hover::after {
 }
 
 /*-------------My Work-------------*/
-
 
 .layer { 
 
@@ -528,7 +500,6 @@ nav .fa-solid {
         display: none;
     }
 
-    
     #about {
         padding-top: 40px; 
         padding-bottom: 40px;
@@ -573,7 +544,6 @@ nav .fa-solid {
 
 @media only screen and (max-width: 650px) {
 
-
     #sidemenu {
         position: fixed;
         top: 0;
@@ -600,7 +570,6 @@ nav .fa-solid {
         text-align: center;
         width: 50%; 
     }
-    
 
     .social-icons {
         display: none;
@@ -655,12 +624,10 @@ nav .fa-solid {
        
     }
 
-        
     .header-text .projects {
             font-size: 14px;
             padding: 20px 50px;
         }
-
 
     /* About Section Styles */
 
@@ -671,20 +638,15 @@ nav .fa-solid {
         margin-bottom: 10px; 
     }
 
-
     .about-col-2 {
         font-size: 15px;
     }
-
-
 
     /* Tab Styles */
     .tab-links,
     .tab-contents {
         text-align: center;
     }
-
-
 
     .tab-titles {
         flex-direction: column;
@@ -716,7 +678,6 @@ nav .fa-solid {
         border-radius: 10px;
     }
 
-
 /* Contact Section Styles */
 
 #contact .container {
@@ -732,7 +693,6 @@ nav .fa-solid {
         flex-basis: 100%;
         width: 100%;
     }
-
 
      /* Form Styles */
     form input,
@@ -774,7 +734,6 @@ body::before {
     opacity: 1; 
     animation: animateBackground 20s linear infinite;
 }
-
 
 @keyframes animateBackground {
     0% {
