@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
           if (response.ok) {
-            messageElement.textContent = 'Message sent successfully!';
+            messageElement.textContent = 'Thank you for your message!';
           } else {
             messageElement.textContent = 'Error sending message.';
           }
